@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap');
+body{
+    font-family: sans-serif;
+    background-color: #E5E5E5;
+
+}
+.textbox{
+    /* overflow: hidden; */
+    border-bottom: 1px solid white;
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white !important;  
+}
+.textbox input::placeholder{
+    color: rgb(255, 255, 255) !important;  
+}
+
+#ks{
+    color: white;
+    font-size: 20px;
+    font-family: 'yaldevi', sans-serif;
+    position: relative;
+    top: 7px;
+    
+}
+
+#ks:hover{
+    cursor: pointer;
+}
+
+#name{
+    color: white;
+    font-size: 20px;
+    margin-right: 100px;
+    font-family: 'Yaldevi', sans-serif;
+}
+.glyphicon{
+    color: white;
+}
+#cont{
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+}
+#cont div{
+    flex-grow: 0;
+}
+.icone{
+    color: white;
+    margin: 8px;
+}
+.menu{
+    color: white;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.col-sm-8{
+    position: relative;
+    border-radius: 20px;
+    top: 50px;
+    background-color: rgb(255, 255, 255);
+    right: 15px;
+}
+
+.col-sm-4{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    position: relative;
+    top: 50px;
+    left: 15px;
+
+}
+
+#line1{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    left: 150px;
+    bottom: 65px;
+}
+
+#line2{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: large;
+    left: 150px;
+    bottom: 90px;
+}
+
+.col-8{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    position: relative;
+    top: 130px;
+    right: 15px;
+}
+
+#line3{
+    position: relative;
+    font-family: 'Yaldevi', sans-serif;
+    font-weight: bolder;
+    top: 10px;
+}
+
+#line4{
+    position: relative;
+    font-family: 'Yaldevi', sans-serif;
+    font-weight: lighter;
+    top: 10px;
+}
+
+#pic1{
+    position: relative;
+    top: 60px;
+}
+
+#price1{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    left: 600px;
+    bottom: 100px;
+    margin-right: 300px;
+
+
+}
+
+#total{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 200px;
+    bottom: 30px;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 300px;
+}
+
+#orderbtn{
+    position: relative;
+    border: solid;
+    border-width: 0ch;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    left: 45px;
+    text-align: center;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+
+#couponinpt{
+    position: relative;
+    top: 30px;
+    left: 40px;
+    height: 40px;
+    width: 260px;
+    background-color: #c4c4C4;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+#applybtn{
+    position: relative;
+    border: solid;
+    border-width: 0ch;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    top: 30px;
+    right: 30px;
+    text-align: center;
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+
+#cpn{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 40px;
+    top: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    /* -- quantity box -- */
+
+.quantity {
+    display: inline-block;
+    position: relative;
+    left: 600px;
+    bottom: 50px;
+}
+   
+   .quantity .input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+   }
+   
+   .quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top; }
+   
+   .quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+   }
+   
+   .quantity.buttons_added .minus,
+   .quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    height: 41px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor:pointer;}
+   
+   .quantity.buttons_added .minus {
+    border-right: 0; }
+   
+   .quantity.buttons_added .plus {
+    border-left: 0; }
+   
+   .quantity.buttons_added .minus:hover,
+   .quantity.buttons_added .plus:hover {
+    background: #eeeeee; }
+   
+   .quantity input::-webkit-outer-spin-button,
+   .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; }
+    
+    .quantity.buttons_added .minus:focus,
+   .quantity.buttons_added .plus:focus {
+    outline: none; }
+   
+   
+                            /* -- End -- */
