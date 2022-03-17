@@ -43,20 +43,23 @@
       <div class="container">
         <div class="row">
           <?php
-            foreach($_SESSION["cart"] as $value){
-              echo $value->idProduit;
-            }
+            foreach($_SESSION["cart1"] as $value){
+              $sql = "SELECT * FROM produit WHERE idProduit =".$value->idProduit;
+              $dt = $conn->query($sql);
+              $result = $dt->fetch_assoc();
           ?>
           <div class="col-sm-8">
-            <img src="505477_swatch.webp" alt="" width="150px" id="pic1">
-            <ul id="line1">Laura Mercier Pure Canvas Primer Blurring</ul> 
-            <ul id="price1">42.00$</ul>
-            <ul id="line2">Laura Mercier, pionnière du « Flawless Face » <br>
-              ou teint zéro défaut et créatrice de la catégorie...</ul>
+            <img src="<?php echo $result["image"] ?>" alt="" width="150px" id="pic1">
+            <ul id="line1"><?php echo $result["libelle"] ?></ul> 
+            <ul id="price1"><?php echo $result["prix"] ?></ul>
+            <ul id="line2"><?php echo $result["description"] ?></ul>
               <div class="quantity buttons_added">
                 <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
               </div>
           </div>
+          <?php
+            }
+          ?>
           <div class="col-sm-4">
             <ul id="line3">Summary Of Your Order</ul>
             <ul id="line4">Subtotal:</ul> <ul id="total">420.69$</ul>
