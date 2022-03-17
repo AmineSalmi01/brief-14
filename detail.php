@@ -31,14 +31,17 @@
                 <p style="margin:20px;"><?php echo $row["description"]?></p>
                 <h4 class="card-title" style="font-weight:bold;margin:20px;"><?php echo $row["prix"]?>$</h4>
 
+              <form action="add_to_cart.php?id=<?php echo $row["idProduit"]?>" method="post">
               <?php
                 if($row["stock"] == 0){
                     echo "<a href='login.html' class='btn' style='margin:20px;background-color: #D1D1D1;color: #fff;'>OUT OF STOCK</a>";
                 }
                 else{
-                    echo "<a href='login.html' class='btn btn-dark' style='margin:20px;'>ADD TO CART</a>";
+                    echo "<input type='submit' value='ADD TO CART' class='btn btn-dark' style='margin:20px;'>";
                 }
               ?>
+              <input type="text" style="background-color:white" name="quantite" value="1">
+              </form>
         </div>
      </div>
     </div>

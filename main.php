@@ -39,23 +39,13 @@
       </nav>
 
 <div class="row mainbackground">
-  <img style="width: 100%;" src="main background.png">
+  <img style="width: 100%;" src="background.png">
 </div> 
 </header>
 
 <div class="container " style="text-align: center;">
    <h1>Featuring</h1>
-<!-- <div class="row justify-content-md-center">
-<div class="col-3 mr-5 card">
-    <img class="card-img-top" src="assets/1.webp" alt="Card image" width="100%">
-<div class="card-body">
-   <h4 class="card-title">4.89$</h4>
-    <p class="card-text">  Super Waterproof 
-    Black Liquid Eyeliner 
-  </p>
-    <a href="#" class="btn btn-dark">ADD TO CART</a>
-</div>
-</div>  -->
+
 <div class="row d-flex justify-content-center">
 <?php
 do{ 
@@ -78,89 +68,7 @@ do{
 }while ($produit = mysqli_fetch_assoc($data))
 ?>
 </div>
-<!-- <div class="col-3  mr-5 card">
-    <img class="card-img-top" src="assets/2.png" alt="Card image">
-    <div class="card-body">
-        <h4 class="card-title">7$</h4>
-        <p class="card-text">Lipstick Matte Texture 
-        Waterproof Long Lasting</p>
-        <a href="#" class="btn btn-dark">ADD TO CART</a>
-    </div>
-</div> -->
-<!-- 
-        <div class="col-3 mr-5 card" >
-            <img class="card-img-top" src="assets/3.jpg" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">9.99$</h4>
-              <p class="card-text">Black Gel Eyeliner
-                Waterproof Cosmetics</p>
-              <a href="#" class="btn btn-dark">ADD TO CART</a>
-            </div>
-        </div>
 
-        <div class="col-3 mr-5 card" >
-            <img class="card-img-top" src="assets/4.webp" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">8.99$</h4>
-              <p class="card-text"> Gucci Mascara L’Obscur
-                  Mascara
-              </p>
-              <a href="#" class="btn btn-secondary">OUT OF STOCK</a>
-            </div>
-        </div>
-
-        <div class="col-3 mr-5 card" >
-            <img class="card-img-top" src="assets/5.webp" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">5.69$</h4>
-              <p class="card-text">Laura Mercier 
-                Pure Canvas Primer Blurring</p>
-              <a href="#" class="btn btn-dark">ADD TO CART</a>
-            </div>
-        </div>
-
-        <div class="col-3 mr-5 card" >
-            <img class="card-img-top" src="assets/6.webp" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">6.65$</h4>
-              <p class="card-text"> Highlighter 
-                Glowing with a light</p>
-              <a href="#" class="btn btn-dark">ADD TO CART</a>
-            </div>
-        </div>
-
-        <div class="col-3 mr-5 card" >
-            <img class="card-img-top" src="assets/7.jpg" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">3.49$</h4>
-              <p class="card-text"> Colorful Liquid Eyeliner
-                Waterproof</p>
-              <a href="#" class="btn btn-dark">ADD TO CART</a>
-            </div>
-        </div>
-
-        <div class="col-3 mr-5 card" >
-            <img class="card-img-top" src="assets/8.jpg" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">5.99$</h4>
-              <p class="card-text">Love Shaped Blush
-                Waterproof Sweat-proof</p>
-              <a href="#" class="btn btn-dark">ADD TO CART</a>
-            </div>
-        </div>
-
-        <div class="col-3 mr-5 card" >
-            <img class="card-img-top" src="assets/9.jpg" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">20$</h4>
-              <p class="card-text">Eye Shadow 
-                Fenty Beauty Snap  </p>
-              <a href="#" class="btn btn-secondary">OUT OF STOCK</a>
-            </div>
-        </div>
-
-</div>
-</div> -->
 </div>
 
   <footer class="bg- text-center text-white "style="background-color: black; >

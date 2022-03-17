@@ -1,21 +1,6 @@
 <?php
   session_start();
-  require_once("config.php");
-  $datab = new DB();
-  if(!empty($_GET["action"])){
-    switch($_GET["action"]){
-      case "add":
-        if(!empty($_POST["stock"])){
-          $produitcode = $datab->runQuery("SELECT * FROM produit WHERE idProduit='" . $_GET["idProduit"] . "'");
-          $itemArray = array($productByCode[0]["idProduit"]=>array(
-            'libelle'=>$productByCode[0]["libelle"], 
-            'idProduit'=>$productByCode[0]["idProduit"], 
-            'stock'=>$_POST["stock"], 
-            'prix'=>$productByCode[0]["prix"], 
-            'image'=>$productByCode[0]["image"]));
-        }
-    }
-  }
+  include 'config.php';
 ?>
 
 <!DOCTYPE html>
@@ -57,6 +42,11 @@
 
       <div class="container">
         <div class="row">
+          <?php
+            foreach($_SESSION["cart"] as $value){
+              echo $value->idProduit;
+            }
+          ?>
           <div class="col-sm-8">
             <img src="505477_swatch.webp" alt="" width="150px" id="pic1">
             <ul id="line1">Laura Mercier Pure Canvas Primer Blurring</ul> 
