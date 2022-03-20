@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "gestion_magasin";
+$database = "brief14";
 
 $conn = new mysqli($servername, $username, $password, $database);
 if (!$conn)
